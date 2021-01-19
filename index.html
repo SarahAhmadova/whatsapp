@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://kit.fontawesome.com/0ec019fc88.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container m-5">
+        <div class="row">
+            <div class="col-4 offset-3">
+                <audio id="sound">
+                    <source src="assets/audio/whatsapp_incoming.mp3" type="audio/mpeg"></audio>
+                <audio id="tck">
+                    <source src="assets/audio/tick.mp3" type="audio/mpeg"></audio>
+                <div class="phone">
+                    <img src="img/frame.png" alt="" class="bg">
+                    <div class="content">
+                        <div class="header"></div>
+                    
+                        <div class="head">
+                            <div class="notif">
+                                <span class="curTime">14:33</span>
+                                <div class="icons">
+                                    <i class="fas fa-signal"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-battery-three-quarters charge "></i>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <a href="#" class="back"><i class="fas fa-chevron-left"></i></a>
+                                <a href="#"><img src="img/profile1.jpg" alt=""></a>
+                                <div class="contact">
+                                    <a href="#" class="contactName">Jane Marie</a>
+                                    <span class="currentSt"></span>
+                                </div>
+
+                                <div class="calls">
+                                    <a href="#"><i class="fas fa-video"></i></a>
+                                    <a href="#"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="board">
+
+                        </div>
+                        <div class="msgScreen">
+                            
+                            <!-- <div class="msgBox snt">
+                            <div class="msg sent">
+                                <span>Hello</span>
+                                <span class="time">12:29</span>
+                                <img src="img/ticks.png" alt="" class="tick">
+                               </div>
+                           </div>
+                           <div class="msgBox cm">
+                            <div class="msg come">
+                                <span>Hello Worlb bnnbnmbnmmb mbjhbhbojmokjjnjn njknjjkjk h.df,s.,sfsd,f.s. ,.,.,ds.d,sdjkjkhiiiiiiiuk jjh</span>
+                                <span class="time">12:29</span>
+                               </div>
+                           </div>
+                           <div class="msgBox snt">
+                            <div class="msg sent">
+                                <span>Hello Worlb bnnbnmbnmmb mbjhbhbojmokjjnjn njknjjkjk h.df,s.,sfsd,f.s. ,.,.,ds.d,sdjkjkhiiiiiiiuk jjh</span>
+                                <span class="time">02:29</span>
+                                <img src="img/ticks.png" alt="" class="tick">
+                               </div>
+                           </div>
+                           <div class="msgBox cm">
+                            <div class="msg come">
+                                <span>Hi</span>
+                                <span class="time">12:29</span>
+                               </div>
+                           </div> -->
+                            <div class="msgBox snt">
+                                <div class="msg sent">
+                                    <span>Hi</span>
+                                    <span class="time">12:29 <img src="img/ticks.png" alt="" class="tick"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msgInput">
+                            <i class="fas fa-plus"></i>
+                            <form action="">
+                                <input type="text" id="msg1" placeholder="Type a message">
+                                <a href="#" class="send" onclick="send1()"><i class="far fa-paper-plane"></i></a>
+                            </form>
+                            <i class="fas fa-camera"></i>
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="keyboard"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-2"></div> -->
+            <div class="col-4">
+                <div class="phone2">
+                    <img src="img/frame.png" alt="" class="bg">
+                    <div class="content">
+                        <div class="header"></div>
+                        <div class="head">
+                            <div class="notif">
+                                <span class="curTime">14:33</span>
+                                <div class="icons">
+                                    <i class="fas fa-signal"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-battery-three-quarters charge "></i>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <a href="#" class="back"><i class="fas fa-chevron-left"></i></a>
+                                <a href="#"><img src="img/profile1.jpg" alt=""></a>
+                                <div class="contact">
+                                    <a href="#" class="contactName">Sara Ahmad</a>
+                                    <span class="currentSt"></span>
+                                </div>
+
+                                <div class="calls">
+                                    <a href="#"><i class="fas fa-video"></i></a>
+                                    <a href="#"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="board">
+
+                        </div>
+                        <div class="msgScreen">
+
+                        </div>
+                        <div class="msgInput">
+                            <i class="fas fa-plus"></i>
+                            <form action="">
+                                <input type="text" value='' id="msg2" placeholder="Type a message">
+                                <a href="#" class="send" onclick="send2()"><i class="far fa-paper-plane"></i></a>
+                            </form>
+                            <i class="fas fa-camera"></i>
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="keyboard"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/src.js"></script>
+</body>
+
+</html>
